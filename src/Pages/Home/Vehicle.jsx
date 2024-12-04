@@ -25,13 +25,35 @@ function Vehicle() {
                 <div className="image-box">
                   <figure className="image">
                     <a href="page-taxi.html">
-                      <img src="images/resource/price2-1.jpg" alt="Image" />
+                      <img src="images/resource/price2-1.jpg" alt="Image1" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
                     <a href="page-taxi.html">BMW X5 2008</a>
+                  </h4>
+                  <div className="city">Chicago</div>
+                  <div className="price">
+                    $4.20<small>/km</small>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+            {/* Pricing Block */}
+            <div className="pricing-block-two">
+              <div className="inner-box">
+                <div className="image-box">
+                  <figure className="image">
+                    <a href="page-taxi.html">
+                      <img src="images/resource/price2-2.jpg" alt="Image2" />
+                    </a>
+                  </figure>
+                </div>
+                <div className="content">
+                  <h4 className="title">
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -45,14 +67,35 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-2.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-3.jpg" alt="Image3" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
+                  </h4>
+                  <div className="city">Chicago</div>
+                  <div className="price">
+                  $4.20<small>/km</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Pricing Block */}
+            <div className="pricing-block-two">
+              <div className="inner-box">
+                <div className="image-box">
+                  <figure className="image">
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-1.jpg" alt="Image4" />
+                    </a>
+                  </figure>
+                </div>
+                <div className="content">
+                  <h4 className="title">
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -66,14 +109,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-3.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-2.jpg" alt="Image5" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -87,14 +130,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-1.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-3.jpg" alt="Image6" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -108,14 +151,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-2.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-1.jpg" alt="Image7" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -129,14 +172,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-3.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-2.jpg" alt="Image8" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -150,14 +193,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-1.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-3.jpg" alt="Image9" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -171,56 +214,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-2.jpg" alt="Image" />
+                    <a href="/vehicledetail">
+                      <img src="images/resource/price2-1.jpg" alt="Image10" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
-                  </h4>
-                  <div className="city">Chicago</div>
-                  <div className="price">
-                    $4.20<small>/km</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Pricing Block */}
-            <div className="pricing-block-two">
-              <div className="inner-box">
-                <div className="image-box">
-                  <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-3.jpg" alt="Image" />
-                    </a>
-                  </figure>
-                </div>
-                <div className="content">
-                  <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
-                  </h4>
-                  <div className="city">Chicago</div>
-                  <div className="price">
-                    $4.20<small>/km</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Pricing Block */}
-            <div className="pricing-block-two">
-              <div className="inner-box">
-                <div className="image-box">
-                  <figure className="image">
-                    <a href="page-taxi.html">
-                      <img src="images/resource/price2-1.jpg" alt="Image" />
-                    </a>
-                  </figure>
-                </div>
-                <div className="content">
-                  <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -231,8 +232,10 @@ function Vehicle() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
+    
     {/* End Pricing Section */}
   </>
   

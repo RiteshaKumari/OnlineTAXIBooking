@@ -13,7 +13,7 @@ function ServiceDetail() {
           <h1 className="title">Service Details</h1>
           <ul className="page-breadcrumb">
             <li>
-              <a href="index-2.html">Home</a>
+              <a href="#!">Home</a>
             </li>
             <li>Services</li>
           </ul>
@@ -32,37 +32,37 @@ function ServiceDetail() {
                 <div className="sidebar-service-list">
                   <ul>
                     <li>
-                      <a href="page-service-details.html" className="current">
+                      <a href="#!" className="current">
                         <i className="fas fa-angle-right" />
                         <span>Flexible Services</span>
                       </a>
                     </li>
                     <li className="current">
-                      <a href="page-service-details.html">
+                      <a href="#!">
                         <i className="fas fa-angle-right" />
                         <span>Airport Transfer Taxi</span>
                       </a>
                     </li>
                     <li>
-                      <a href="page-service-details.html">
+                      <a href="#!">
                         <i className="fas fa-angle-right" />
                         <span>Taxi Round Trip</span>
                       </a>
                     </li>
                     <li>
-                      <a href="page-service-details.html">
+                      <a href="#!">
                         <i className="fas fa-angle-right" />
                         <span>City Cab</span>
                       </a>
                     </li>
                     <li>
-                      <a href="page-service-details.html">
+                      <a href="#!">
                         <i className="fas fa-angle-right" />
                         <span>Cab Fusion</span>
                       </a>
                     </li>
                     <li>
-                      <a href="page-service-details.html">
+                      <a href="#!">
                         <i className="fas fa-angle-right" />
                         <span>Elegant Travel</span>
                       </a>
@@ -92,7 +92,7 @@ function ServiceDetail() {
                     data-wow-delay="0.5s"
                     data-wow-duration="1200m"
                   >
-                    <a href="#" className="theme-btn btn-style-one d-grid">
+                    <a href="#!" className="theme-btn btn-style-one d-grid">
                       <span className="btn-title">
                         <span className="fas fa-file-pdf" /> download pdf file
                       </span>

@@ -6,7 +6,7 @@ import Vehicle from './Vehicle';
 import Booking from './Booking';
 import Team from './Team';
 import FunReview from './FunReview';
-import Benefit from './Benefit';
+//import Benefit from './Benefit';
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
    <MainSlider/>
    <Service />
    <About />
-   <Benefit/>
+   {/* <Benefit/> */}
    <Vehicle />
    <Booking/>
    <FunReview />

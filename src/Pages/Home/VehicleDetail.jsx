@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DriverDetail() {
+function VehicleDetail() {
   return (
     <>
   {/* Start main-content */}
@@ -10,7 +10,7 @@ function DriverDetail() {
   >
     <div className="auto-container">
       <div className="title-outer text-center">
-        <h1 className="title">Driver Details</h1>
+        <h1 className="title">Vehicle Details</h1>
         <ul className="page-breadcrumb">
           <li>
             <a href="index-2.html">Home</a>
@@ -21,7 +21,7 @@ function DriverDetail() {
     </div>
   </section>
   {/* end main-content */}
-  {/*Team Details Start*/}
+  {/*vehicle Details Start*/}
   <section className="team-details">
     <div className="" />
     <div className="container pb-100">
@@ -30,7 +30,7 @@ function DriverDetail() {
           <div className="col-xl-6 col-lg-6">
             <div className="team-details__top-left">
               <div className="team-details__top-img">
-                <img src="images/resource/team-details.jpg" alt="" />
+                <img src="images/resource/team-details.jpg" alt="img1" />
                 <div className="team-details__big-text" />
               </div>
             </div>
@@ -40,10 +40,10 @@ function DriverDetail() {
               <div className="team-details__top-content">
                 <h3 className="team-details__top-name">Aleesha Brown</h3>
                 <p className="team-details__top-title">
-                  Managing Director &amp; CEO
+                  {/* Managing Director &amp; CEO */}
                 </p>
                 <p className="team-details__top-text-1">
-                  I help my clients stand out and they help me grow.
+                  {/* I help my clients stand out and they help me grow. */}
                 </p>
                 <div className="team-details-contact mb-30">
                   <h5 className="mb-0">Email Address</h5>
@@ -85,6 +85,9 @@ function DriverDetail() {
                     <i className="fab fa-instagram" />
                   </a>
                 </div>
+                <button type="reset" className="theme-btn btn-style-one">
+                <span className="btn-title">Book Now</span>
+              </button>
               </div>
             </div>
           </div>
@@ -138,7 +141,10 @@ function DriverDetail() {
       </div>
     </div>
   </section>
-  {/*Team Details End*/}
+  {/*Vehicle Details End*/}
+
+
+
   {/*Contact Details Start*/}
   <section className="team-contact-form">
     <div className="container pb-100">
@@ -223,15 +229,21 @@ function DriverDetail() {
               >
                 <span className="btn-title">Send message</span>
               </button>
-              <button type="reset" className="theme-btn btn-style-one">
-                <span className="btn-title">Reset</span>
-              </button>
+
             </div>
           </form>
           {/* Contact Form Validation*/}
         </div>
       </div>
     </div>
+    <style>
+        {`
+        .team-details__top-img img {
+    width: 100%;
+    height: 456px;
+    border-radius: 30px;
+}`}
+    </style>
   </section>
   {/*Contact Details End*/}
 </>
@@ -239,4 +251,4 @@ function DriverDetail() {
   )
 }
 
-export default DriverDetail
+export default VehicleDetail

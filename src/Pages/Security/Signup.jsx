@@ -37,7 +37,7 @@ function Signup() {
         </form>
         <div className="login-prompt">
           <p>
-            Already have an account? <a href="/login">Login</a>
+            Already have an account? <a href="/signin">Login</a>
           </p>
         </div>
       </div>
@@ -174,3 +174,4 @@ function Signup() {
 }
 
 export default Signup;
+ 

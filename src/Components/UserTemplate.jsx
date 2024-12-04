@@ -9,7 +9,7 @@ const cssLinks = [
 ];
 
 const jsLinks = [
-  "js/email-decode.min.js",
+ // "js/email-decode.min.js",
   "js/jquery.js",
   "js/popper.min.js",
   "plugins/revolution/js/jquery.themepunch.revolution.min.js",

@@ -7,7 +7,9 @@ function AltHeader() {
     <div className="sidebar">
       <div className="side-header">
         <h3>
-          M<span>odern</span>
+          <a href="/">
+          LOGO
+          </a>
         </h3>
       </div>
       <div className="side-content">
@@ -16,24 +18,24 @@ function AltHeader() {
             className="profile-img bg-img"
             style={{ backgroundImage: "url(img/3.jpeg)" }}
           />
-          <h4>David Green</h4>
-          <small>Art Director</small>
+          <h4>Ritesha</h4>
+          <small>Developer</small>
         </div>
         <div className="side-menu">
           <ul>
             <li>
-              <a href="#!" className="active">
+              <a href="/admindashboard" className="active">
                 <span className="las la-home" />
                 <small>Dashboard</small>
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a href="/addproduct">
                 <span className="las la-user-alt" />
-                <small>Profile</small>
+                <small>Add Product</small>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#!">
                 <span className="las la-envelope" />
                 <small>Mailbox</small>
@@ -56,7 +58,7 @@ function AltHeader() {
                 <span className="las la-tasks" />
                 <small>Tasks</small>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
@@ -85,7 +87,6 @@ function AltHeader() {
       </header>
       </div>
   </>
-  
   );
 }
 

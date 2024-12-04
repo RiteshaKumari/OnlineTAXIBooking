@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 function Service() {
   return (
   <>
@@ -80,8 +79,7 @@ function Service() {
     </div>
   </section>
   {/* End Service Section */}
-</>
-
+  </>
   )
 }
 

@@ -13,13 +13,15 @@ import './App.css';
 import Service from './Pages/myService/Service';
 import ServiceDetail from './Pages/myService/ServiceDetail';
 import Driver from './Pages/Driver/Driver';
-import DriverDetail from './Pages/Driver/DriverDetail';
+import VehicleDetail from './Pages/Home/VehicleDetail';
 import Signup from './Pages/Security/Signup';
 import Signin from './Pages/Security/Login';
 import AdminDashboard from './Pages/Admin/AdminDashboard';
 import ForgetPassword from './Pages/Security/ForgetPassword';
 import AddProduct from './Pages/Admin/AddProduct';
 import UserTemplate from './Components/UserTemplate';
+import Vehicle from './Pages/Home/Vehicle';
+import Booking from './Pages/Home/Booking';
 
 function App() {
   return (
@@ -56,6 +58,16 @@ function App() {
             </UserTemplate>
           }
         />
+          <Route
+          path="/vehicle"
+          element={
+            <UserTemplate>
+            <WithDefaultLayout>
+              <Vehicle />
+            </WithDefaultLayout>
+            </UserTemplate>
+          }
+        />
         <Route
           path="/servicedetail"
           element={
@@ -79,12 +91,12 @@ function App() {
           }
         />
         <Route
-          path="/driverdetail"
+          path="/vehicledetail"
           element={
             <UserTemplate>
-            <WithAltLayout>
-              <DriverDetail />
-            </WithAltLayout>
+            <WithDefaultLayout>
+              <VehicleDetail />
+            </WithDefaultLayout>
             </UserTemplate>
           }
         />
@@ -94,6 +106,16 @@ function App() {
             <UserTemplate>
             <WithDefaultLayout>
               <Contact />
+            </WithDefaultLayout>
+            </UserTemplate>
+          }
+        />
+          <Route
+          path="/booking"
+          element={
+            <UserTemplate>
+            <WithDefaultLayout>
+              <Booking />
             </WithDefaultLayout>
             </UserTemplate>
           }

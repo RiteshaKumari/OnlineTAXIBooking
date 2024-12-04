@@ -13,7 +13,7 @@ function Footer() {
           <div className="top-left">
             <div className="logo-box">
               <div className="logo">
-                <a href="index-2.html">
+                <a href="/">
                   <img src="images/logo-2.png" alt="Logo" />
                 </a>
               </div>
@@ -30,7 +30,7 @@ function Footer() {
               <i className="icon fal fa-mobile" />
               <div className="content">
                 <h5 className="title">call for taxi</h5>
-                <a href="#" className="phone-no">
+                <a href="#!" className="phone-no">
                   5267-214-392
                 </a>
               </div>
@@ -52,11 +52,11 @@ function Footer() {
                   Competently re-engineer cross-media breed meta-services
                 </div>
                 <div className="btn-box">
-                  <a href="#" className="image">
-                    <img src="images/icons/google-play-2.png" alt="Image" />
+                  <a href="#!" className="image">
+                    <img src="images/icons/google-play-2.png" alt="Image1" />
                   </a>
-                  <a href="#" className="image">
-                    <img src="images/icons/app-store-2.png" alt="Image" />
+                  <a href="#!" className="image">
+                    <img src="images/icons/app-store-2.png" alt="Image2" />
                   </a>
                 </div>
               </div>
@@ -70,35 +70,35 @@ function Footer() {
                 <ul className="user-links two-column">
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">About</a>
+                    <a href="#!">About</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Get a Cab</a>
+                    <a href="#!">Get a Cab</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Our Vehicles</a>
+                    <a href="#!">Our Vehicles</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Reviews</a>
+                    <a href="#!">Reviews</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Services</a>
+                    <a href="#!">Services</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Our News</a>
+                    <a href="#!">Our News</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Package</a>
+                    <a href="#!">Package</a>
                   </li>
                   <li>
                     <i className="icon fa fa-angle-double-right" />{" "}
-                    <a href="#">Login</a>
+                    <a href="/signin">Login</a>
                   </li>
                 </ul>
               </div>
@@ -113,7 +113,7 @@ function Footer() {
                   Signup for our weekly newsletter or updates.
                 </div>
                 <div className="newsletter-form">
-                  <form method="post" action="#">
+                  <form method="post" action="#!">
                     <div className="form-group">
                       <div className="input-outer">
                         <input
@@ -147,17 +147,17 @@ function Footer() {
           </div>
           <ul className="footer-nav">
             <li>
-              <a href="#">
+              <a href="#!">
                 <i className="fab fa-facebook" /> Facebook
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#!">
                 <i className="fab fa-twitter" /> Twitter
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#!">
                 <i className="fab fa-linkedin" /> Linkedin
               </a>
             </li>
@@ -167,8 +167,7 @@ function Footer() {
     </div>
   </footer>
   {/*End Main Footer */}
-</>
-
+  </>
   )
 }
 

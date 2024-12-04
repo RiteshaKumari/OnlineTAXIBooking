@@ -5,34 +5,6 @@ function AdminDashboard() {
   return (
  <>
    <div className="main-content">
-      {/* <header>
-        <div className="header-content">
-          <label htmlFor="menu-toggle">
-            <span className="las la-bars" />
-          </label>
-          <div className="header-menu">
-            <label htmlFor="">
-              <span className="las la-search" />
-            </label>
-            <div className="notify-icon">
-              <span className="las la-envelope" />
-              <span className="notify">4</span>
-            </div>
-            <div className="notify-icon">
-              <span className="las la-bell" />
-              <span className="notify">3</span>
-            </div>
-            <div className="user">
-              <div
-                className="bg-img"
-                style={{ backgroundImage: "url(img/1.jpeg)" }}
-              />
-              <span className="las la-power-off" />
-              <span>Logout</span>
-            </div>
-          </div>
-        </div>
-      </header> */}
       <main>
         <div className="page-header">
           <h1>Dashboard</h1>

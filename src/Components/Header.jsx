@@ -63,7 +63,7 @@ function Header() {
           <div className="main-box">
             <div className="logo-box">
               <div className="logo">
-                <a href="index-2.html">
+                <a href="/">
                   <img src="images/logo-2.png" alt="Logo" />
                 </a>
               </div>
@@ -73,133 +73,25 @@ function Header() {
               <nav className="nav main-menu">
                 <ul className="navigation">
                   <li className="current dropdown">
-                    <a href="index-2.html">Home</a>
-                    <ul>
-                      <li>
-                        <a href="index-2.html">Home Layout 1</a>
-                      </li>
-                      <li>
-                        <a href="index-3.html">Home Layout 2</a>
-                      </li>
-                      <li>
-                        <a href="index-4.html">Home Layout 3</a>
-                      </li>
-                      <li className="dropdown">
-                        <a href="index-1-single.html">Single Styles</a>
-                        <ul>
-                          <li>
-                            <a href="index-1-single.html">Single Page 01</a>
-                          </li>
-                          <li>
-                            <a href="index-2-single.html">Single Page 02</a>
-                          </li>
-                          <li>
-                            <a href="index-3-single.html">Single Page 03</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="dropdown">
-                        <a href="index-1-dark.html">Dark Styles</a>
-                        <ul>
-                          <li>
-                            <a href="index-1-dark.html">Dark Page 01</a>
-                          </li>
-                          <li>
-                            <a href="index-2-dark.html">Dark Page 02</a>
-                          </li>
-                          <li>
-                            <a href="index-3-dark.html">Dark Page 03</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="index-1-rtl.html">RTL Style One</a>
-                      </li>
-                    </ul>
+                    <a href="/">Home</a>
+                 
                   </li>
                   <li className="dropdown">
-                    <a href="#!">Pages</a>
-                    <ul>
-                      <li>
-                        <a href="page-about.html">About</a>
-                      </li>
-                      <li>
-                        <a href="page-booking.html">Booking</a>
-                      </li>
-                      <li>
-                        <a href="page-taxi.html">Taxi List</a>
-                      </li>
-                      <li className="dropdown">
-                        <a href="#!">Driver</a>
-                        <ul>
-                          <li>
-                            <a href="page-team.html">Driver List</a>
-                          </li>
-                          <li>
-                            <a href="page-team-details.html">Driver Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="page-testimonial.html">Testimonial</a>
-                      </li>
-                      <li>
-                        <a href="page-pricing.html">Pricing</a>
-                      </li>
-                      <li>
-                        <a href="page-faq.html">FAQ</a>
-                      </li>
-                      <li>
-                        <a href="page-404.html">Page 404</a>
-                      </li>
-                    </ul>
+                    <a href="/about">About</a>
+                  
                   </li>
                   <li className="dropdown">
-                    <a href="#!">Services</a>
-                    <ul>
-                      <li>
-                        <a href="page-services.html">Services List</a>
-                      </li>
-                      <li>
-                        <a href="page-service-details.html">Service Details</a>
-                      </li>
-                    </ul>
+                    <a href="/service">Service</a>
+                 
                   </li>
+                
                   <li className="dropdown">
-                    <a href="#!">Shop</a>
-                    <ul>
-                      <li>
-                        <a href="shop-products.html">Products</a>
-                      </li>
-                      <li>
-                        <a href="shop-products-sidebar.html">
-                          Products with Sidebar
-                        </a>
-                      </li>
-                      <li>
-                        <a href="shop-product-details.html">Product Details</a>
-                      </li>
-                      <li>
-                        <a href="shop-cart.html">Cart</a>
-                      </li>
-                      <li>
-                        <a href="shop-checkout.html">Checkout</a>
-                      </li>
-                    </ul>
+                    <a href="/Vehicle">Taxi List</a>
                   </li>
-                  <li className="dropdown">
-                    <a href="#!">News</a>
-                    <ul>
-                      <li>
-                        <a href="news-grid.html">News Grid</a>
-                      </li>
-                      <li>
-                        <a href="news-details.html">News Details</a>
-                      </li>
-                    </ul>
-                  </li>
+                 
                   <li>
-                    <a href="page-contact.html">Contact</a>
+                    <a href="/contact">Contact</a>
+                    
                   </li>
                 </ul>
               </nav>
@@ -214,10 +106,10 @@ function Header() {
               {/* Btn Box */}
               <div className="btn-box">
                 <a
-                  href="page-booking.html"
+                  href="/contact"
                   className="theme-btn btn-style-one dark-line-two hover-light"
                 >
-                  <span className="btn-title">Book a Taxi</span>
+                  <span className="btn-title">Contact Us</span>
                 </a>
               </div>
               {/* Mobile Nav toggler */}
@@ -356,6 +248,11 @@ function Header() {
         </div>
       </div>
       {/* End Sticky Menu */}
+        <style>{`
+    .main-menu .navigation > li.dropdown > a:after {
+       content: "" !important;
+}  
+        `}</style>
     </header>
     {/*End Main Header */}
 

@@ -20,10 +20,30 @@ function Login() {
           <button type="submit" className="btn-login">
             Login
           </button>
+          <div className="login-prompt">
+          <p>
+            Don't have an account? <a href="/signup">Signup</a>
+          </p>
+        </div>
         </form>
       </div>
 
       <style>{`
+      .login-prompt {
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        .login-prompt a {
+          color: #3498db;
+          text-decoration: none;
+          font-weight: 600;
+        }
+
+        .login-prompt a:hover {
+          text-decoration: underline;
+        }
+          
         * {
           margin: 0;
           padding: 0;
@@ -39,17 +59,17 @@ function Login() {
           overflow: hidden;
         }
 
-        .form-container {
-          width: 100%;
-          top: 53px;
-          max-width: 876px;
-          position: relative;
-          margin: 0px;
-          padding: 25px;
-          background: linear-gradient(135deg, #ffffff, #f9f9f9);
-          border-radius: 12px;
-          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        }
+       .form-container {
+    width: 100%;
+    top: 21px;
+    /* max-width: 876px; */
+    position: relative;
+    margin: 0px;
+    padding: 55px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
         .login-header {
           text-align: center;
