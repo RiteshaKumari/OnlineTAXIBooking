@@ -24,14 +24,14 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
+                    <a href="/vehicledetail">
                       <img src="images/resource/price2-1.jpg" alt="Image1" />
                     </a>
                   </figure>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="page-taxi.html">BMW X5 2008</a>
+                    <a href="/vehicledetail">BMW X5 2008</a>
                   </h4>
                   <div className="city">Chicago</div>
                   <div className="price">
@@ -46,7 +46,7 @@ function Vehicle() {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <a href="page-taxi.html">
+                    <a href="/vehicledetail">
                       <img src="images/resource/price2-2.jpg" alt="Image2" />
                     </a>
                   </figure>
@@ -238,7 +238,6 @@ function Vehicle() {
     
     {/* End Pricing Section */}
   </>
-  
   )
 }
 

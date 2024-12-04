@@ -85,9 +85,9 @@ function VehicleDetail() {
                     <i className="fab fa-instagram" />
                   </a>
                 </div>
-                <button type="reset" className="theme-btn btn-style-one">
-                <span className="btn-title">Book Now</span>
-              </button>
+                <a href="/booking"> <button type="reset" className="theme-btn btn-style-one">
+               <span className="btn-title">Book Now</span>
+              </button></a>
               </div>
             </div>
           </div>

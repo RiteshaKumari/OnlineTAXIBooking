@@ -102,6 +102,7 @@ License: copyright commercial
  * typography.scss
  * -----------------------------------------------
 */
+
 ::-moz-selection {
   background: var(--theme-color-dark);
   color: #fff;
