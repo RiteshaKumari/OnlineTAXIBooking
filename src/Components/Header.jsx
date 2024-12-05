@@ -64,7 +64,7 @@ function Header() {
             <div className="logo-box">
               <div className="logo">
                 <a href="/">
-                  <img src="images/logo-2.png" alt="Logo" />
+                  <img src="images/CustomImage/Logo.png" alt="Logo" />
                 </a>
               </div>
             </div>

@@ -2416,7 +2416,7 @@ Main Header
 }
 .main-header .logo img {
   max-width: 100%;
-  height: auto;
+  height: 70px;
 }
 .main-header .main-box {
   position: relative;
