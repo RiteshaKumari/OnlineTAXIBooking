@@ -20,7 +20,17 @@ var THEMEMASCOT = {};
   /* ---------------------------------------------------------------------- */
   /* ----------------------------- En Demo Switcher  ---------------------- */
   /* ---------------------------------------------------------------------- */
-
+  const navItems = document.querySelectorAll('.navigation > li');
+  const seen = new Set();
+  
+  navItems.forEach((item) => {
+	const text = item.textContent.trim();
+	if (seen.has(text)) {
+	  item.remove(); // Remove duplicate
+	} else {
+	  seen.add(text);
+	}
+  });
 
   THEMEMASCOT.isRTL = {
     check: function() {
