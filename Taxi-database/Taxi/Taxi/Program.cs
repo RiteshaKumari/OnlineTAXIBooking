@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Taxi.Models;
+using Taxi.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,11 +14,24 @@ builder.Services.AddCors(options =>
             .AllowCredentials());
 });
 
+//builder.Services.AddDbContext<TaxiDbContext>(options =>
+//   options.UseMySQL(builder.Configuration.GetConnectionString("TaxiConn"))
+//);
 builder.Services.AddDbContext<TaxiDbContext>(options =>
-   options.UseMySQL(builder.Configuration.GetConnectionString("TaxiConn"))
-);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TaxiConn")));
 
 builder.Services.AddScoped<Utility>();
+
+//intall- dotnet add package Microsoft.Extensions.Caching.Memory
+//install- dotnet add package Microsoft.AspNetCore.Session
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(10); // Set session timeout
+    options.Cookie.HttpOnly = true;               // Make the cookie accessible only to the server
+    options.Cookie.IsEssential = true;            // Ensure the cookie is always set
+    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+});
 
 builder.Services.AddControllers();
 
@@ -42,6 +55,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+app.UseSession();
 
 app.UseCors("AllowLocalhost3000");
 app.UseAuthorization();

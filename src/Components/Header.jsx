@@ -14,7 +14,7 @@ function Header() {
               <ul className="list-style-one">
                 <li>
                   <i className="fal fa-mobile" />{" "}
-                  <a href="tel:0123456789">+92 8475 904950</a>
+                  <a href="tel:0123456789">+91 8475 904950</a>
                 </li>
                 <li>
                   <i className="fal fa-envelope" />{" "}
@@ -23,7 +23,7 @@ function Header() {
                       className="__cf_email__"
                       data-cfemail="442d2a222b04252a2b266930253c2d6a272b29"
                     >
-                      [email&nbsp;protected]
+                      mabhdrakali999@gmail.com
                     </span>
                   </a>
                 </li>

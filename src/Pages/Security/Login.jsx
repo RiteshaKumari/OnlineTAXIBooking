@@ -25,7 +25,8 @@ function Login() {
 
           // Set the encoded email in a cookie with a 24-hour expiry
           Cookies.set('xyzra', encodedEmail, { expires: 1, secure: true });
-
+         // After successful login
+           localStorage.setItem('jwt_token', response.data.token); // or use Cookies.set('jwt_token', response.data.token);
           Swal.fire({
             position: 'center',
             icon: 'success',
@@ -95,7 +96,6 @@ function Login() {
           {formik.touched.email && formik.errors.email ? (
   <div className="error">{formik.errors.email}</div>
 ) : null}
-
 
           </div>
           <div className="form-group input-icon">

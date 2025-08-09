@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using System.Net;
-using Taxi.Models;
+using Taxi.Model;
 using static System.Net.WebRequestMethods;
 using Google.Protobuf.WellKnownTypes;
 using System.Text;
@@ -16,27 +16,47 @@ namespace Taxi.Controllers
     [ApiController]
     public class HomeController : Controller
     {
-        private readonly Taxi.Models.Utility ul;
+        private readonly Utility ul;
         private readonly TaxiDbContext _context;
         public HomeController(TaxiDbContext context, IConfiguration configuration)
         {
             _context = context;
-            ul = new Taxi.Models.Utility(configuration);
+            ul = new Taxi.Model.Utility(configuration);
         }
 
+        //public string EncodeToBase64UrlSafe(string plainText)
+        //{
+        //    var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+        //    string base64 = System.Convert.ToBase64String(plainTextBytes);
+        //    return base64.Replace("+", "-").Replace("/", "_").TrimEnd('=');
+        //}
+
+        //public string DecodeFromBase64UrlSafe(string base64UrlSafe)
+        //{
+        //    try
+        //    {
+        //        string base64 = base64UrlSafe.Replace("-", "+").Replace("_", "/");
+        //        switch (base64.Length % 4)
+        //        {
+        //            case 2: base64 += "=="; break;
+        //            case 3: base64 += "="; break;
+        //        }
+        //        var base64EncodedBytes = System.Convert.FromBase64String(base64);
+        //        return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+        //    }
+        //    catch (FormatException)
+        //    {
+        //        return "Invalid Base64 string";
+        //    }
+        //}
+
         [HttpPost("Contact")]
-        public IActionResult Contact([FromBody] Contact model)
+        public async Task<IActionResult> Contact([FromBody] Contact model)
         {
             if (ModelState.IsValid)
             {
-                var contact = new Contact
-                {
-                    Phone = model.Phone,
-                    Subject = model.Subject,
-                    Message = model.Message
-                };
-                _context.Contacts.Add(contact);
-                _context.SaveChanges();
+                 _context.Contacts.Add(model);
+                await _context.SaveChangesAsync();
 
                 return Ok(new { success = true, message = "Contact saved successfully." });
             }
@@ -194,79 +214,80 @@ namespace Taxi.Controllers
 
         [Route("verifyemail/{email}")]
         [HttpPost]
-        public ActionResult verifyemail(string email)
+        public ActionResult VerifyEmail(string email)
         {
-           
-                try
+            try
+            {
+                if (!string.IsNullOrEmpty(email))
                 {
-                    if (email != null)
+                    var user = _context.Users.FirstOrDefault(u => u.Email == email);
+                    if (user != null)
                     {
-                    //var user = _context.Users.FirstOrDefault(u => u.Email == Email);
-                    // if (user != null)
-                    //{
+                        Random random = new Random();
+                        string value = random.Next(100001, 999999).ToString();
 
-                    //    Random random = new Random();
-                    //    string value = random.Next(100001, 999999);
-                    //    TempData["otp"] = value;
-                    //    TempData["email"] = Email;
-                    //    String from, pass, to, messageBody;
+                        // When setting session values
+                        HttpContext.Session.SetString("otp", value); // Set OTP value
+                        HttpContext.Session.SetString("email", email); // Set email
 
-                    //    MailMessage message = new MailMessage();
-                    //    to = Email;
-                    //    from = "skillupbharat@gmail.com";
-                    //    pass = "glticvbacsmmvjkb";
-                    //    messageBody = "Your OTP is " + value;
-                    //    message.To.Add(to);
-                    //    message.From = new MailAddress(from);
-                    //    message.Body = messageBody;
-                    //    message.Subject = "Validation Code";
-                    //    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                    //    smtp.EnableSsl = true;
-                    //    smtp.Port = 587;
-                    //    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    //    smtp.Credentials = new NetworkCredential(from, pass);
-                    //    try
-                    //    {
-                    //        smtp.Send(message);
+                        // When retrieving session values
+                        var otp1 = HttpContext.Session.GetString("otp");
+                        var email1 = HttpContext.Session.GetString("email");
 
-                    //        return Ok(value);
-                    //    }
-                    //    catch (Exception ex)
-                    //    {
-                    //        return BadRequest(new { message = ex.Message });
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    return BadRequest(new { message = "Enter Valid Email and Password;" });
-                    //}
-                    string otp = "12345";
-                    return Ok(new { otp });
-                }
+                        string from = "maa.b.eenterprises@gmail.com";
+                        //string pass = "Maabe@%#1";
+                        string pass = "edfzveazunoxvfwr";
+                        string to = email;
+                        string messageBody = "Your OTP is " + value;
+
+                        MailMessage message = new MailMessage();
+                        message.To.Add(to);
+                        message.From = new MailAddress(from);
+                        message.Body = messageBody;
+                        message.Subject = "Validation Code";
+
+                        SmtpClient smtp = new SmtpClient("smtp.gmail.com")
+                        {
+                            EnableSsl = true,
+                            Port = 587,
+                            DeliveryMethod = SmtpDeliveryMethod.Network,
+                            Credentials = new NetworkCredential(from, pass)
+                        };
+
+                        try
+                        {
+                           // smtp.Send(message);
+                            return Ok(value);
+                        }
+                        catch (Exception ex)
+                        {
+                            return BadRequest(new { message = ex.Message });
+                        }
+                    }
                     else
                     {
-                        return BadRequest(new { message = "Please enter valid email !" });
+                        return BadRequest(new { message = "Enter Valid Email and Password;" });
                     }
-
-
                 }
-                catch (Exception ex)
+                else
                 {
-
-                    return BadRequest(new { message = ex.Message });
+                    return BadRequest(new { message = "Please enter a valid email!" });
                 }
-            
-
-
-           
-
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
+
 
         [Route("VerifyOTP/{otp}/{actualotp}")]
         [HttpPost]
         public ActionResult VerifyOTP(string otp,string actualotp)
-        {          
-                if (actualotp == otp)
+        {
+            var otp1 = HttpContext.Session.GetString("otp");
+            var email = HttpContext.Session.GetString("email");
+            if (actualotp == otp)
                 {            
                     return Ok();
                 }

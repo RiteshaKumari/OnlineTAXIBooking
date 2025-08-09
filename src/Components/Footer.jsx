@@ -136,16 +136,16 @@ function Footer() {
       <ul className="contact-list-two light">
         <li>
           <i className="fal fa-map-marker-alt" />
-          25 Street, 145 City Road New <br />
-          Town DD14, USA
+          25 Street, 145 Road New <br />
+          Patna,Bihar - 800024
         </li>
         <li>
           <i className="fal fa-mobile" />{" "}
-          <a href="tel:380503184707">(+380) 50 318 47 07</a>
+          <a href="tel:8475 904950">8475 904950</a>
         </li>
         <li>
           <i className="fal fa-envelope-open" />{" "}
-          <a href="mailto:needhelp@company.com">username@domain.com</a>
+          <a href="mailto:needhelp@company.com">mabhdrakali999@gmail.com</a>
         </li>
       </ul>
     </div>
@@ -160,7 +160,7 @@ function Footer() {
       <div className="auto-container">
         <div className="inner-container">
           <div className="copyright-text">
-            © Developed By techuniverse and Ritesha Kumari.
+            © Developed by Ritesha Kumari.
           </div>
           <ul className="footer-nav">
             <li>

@@ -12,4 +12,6 @@ public partial class Contact
     public string? Message { get; set; }
 
     public string? Phone { get; set; }
+
+    public string? Name { get; set; }
 }

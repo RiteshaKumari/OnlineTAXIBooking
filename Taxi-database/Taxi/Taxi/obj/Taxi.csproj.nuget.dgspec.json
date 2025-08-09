@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Taxi.csproj": {}
+    "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\taxi\\Taxi\\Taxi.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Taxi.csproj": {
+    "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\taxi\\Taxi\\Taxi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Taxi.csproj",
+        "projectUniqueName": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\taxi\\Taxi\\Taxi.csproj",
         "projectName": "Taxi",
-        "projectPath": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Taxi.csproj",
+        "projectPath": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\taxi\\Taxi\\Taxi.csproj",
         "packagesPath": "C:\\Users\\rites\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\obj\\",
+        "outputPath": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\taxi\\Taxi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -53,6 +54,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.5.1, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
@@ -73,6 +78,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "MySql.Data": {
               "target": "Package",
@@ -110,7 +119,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

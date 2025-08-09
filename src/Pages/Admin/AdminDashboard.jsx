@@ -18,14 +18,26 @@ function AdminDashboard() {
   }, [navigate]);
 
   useEffect(() => {
-    axios.get('https://localhost:7009/api/Home/GetBookedData') // Replace with your actual API endpoint
-      .then(response => {
-        setBookings(response.data); // Set the bookings data in state
-      })
-      .catch(error => {
-        console.error('There was an error fetching the data!', error);
-      });
-  }, []);
+    // Get the JWT token from wherever you store it (localStorage, cookies, etc.)
+    const token = localStorage.getItem('jwt_token'); // or Cookies.get('jwt_token');
+   console.log(token)
+    axios.get('https://localhost:7009/api/Home/GetBookedData', {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      setBookings(response.data);
+    })
+    .catch(error => {
+      console.error('There was an error fetching the data!', error);
+      if (error.response && error.response.status === 401) {
+        // Redirect to login if unauthorized
+        navigate('/signin');
+      }
+    });
+  }, [navigate]);
 
   // Columns for the DataTable
   const columns = [

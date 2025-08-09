@@ -1,26 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\",
+  "WorkspaceRootPath": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\myproject\\taxi-database\\taxi\\taxi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\myproject\\taxi-database\\taxi\\taxi\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\myproject\\taxi-database\\taxi\\taxi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\myproject\\taxi-database\\taxi\\taxi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\taxi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\taxi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\myproject\\taxi-database\\taxi\\taxi\\models\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\taxidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\model\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\model\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|d:\\projects\\taxi_project\\onlinetaxibooking\\taxi-database\\taxi\\taxi\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39978707-3BE3-4725-8873-7DE6E4163B9D}|Taxi\\Taxi.csproj|solutionrelative:taxi\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,69 +85,159 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Program.cs",
-              "RelativeDocumentMoniker": "Taxi\\Program.cs",
-              "ToolTip": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Program.cs",
-              "RelativeToolTip": "Taxi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T01:58:08.664Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaxiDbContext.cs",
-              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Models\\TaxiDbContext.cs",
-              "RelativeDocumentMoniker": "Taxi\\Models\\TaxiDbContext.cs",
-              "ToolTip": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Models\\TaxiDbContext.cs",
-              "RelativeToolTip": "Taxi\\Models\\TaxiDbContext.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAIwH0AAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Taxi.csproj",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Taxi.csproj",
+              "RelativeDocumentMoniker": "Taxi\\Taxi.csproj",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Taxi.csproj",
+              "RelativeToolTip": "Taxi\\Taxi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-26T08:32:54.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Program.cs",
+              "RelativeDocumentMoniker": "Taxi\\Program.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Program.cs",
+              "RelativeToolTip": "Taxi\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T01:56:51.89Z",
+              "WhenOpened": "2025-01-26T08:26:58.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Signin.cs",
-              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Models\\Signin.cs",
-              "RelativeDocumentMoniker": "Taxi\\Models\\Signin.cs",
-              "ToolTip": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Models\\Signin.cs",
-              "RelativeToolTip": "Taxi\\Models\\Signin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Title": "TaxiDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\TaxiDbContext.cs",
+              "RelativeDocumentMoniker": "Taxi\\Models\\TaxiDbContext.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\TaxiDbContext.cs",
+              "RelativeToolTip": "Taxi\\Models\\TaxiDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA3wB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:44:27.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T08:26:34.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Taxi\\Models\\User.cs",
-              "ToolTip": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Models\\User.cs",
-              "RelativeToolTip": "Taxi\\Models\\User.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAIA8wBMAAABHAAAA",
+              "DocumentIndex": 6,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Model\\Utility.cs",
+              "RelativeDocumentMoniker": "Taxi\\Model\\Utility.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Model\\Utility.cs",
+              "RelativeToolTip": "Taxi\\Model\\Utility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:38:21.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T01:39:29.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Taxi\\Model\\User.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Model\\User.cs",
+              "RelativeToolTip": "Taxi\\Model\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T01:19:37.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Taxi\\Models\\Role.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\Role.cs",
+              "RelativeToolTip": "Taxi\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T01:04:05.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Taxi\\Models\\Booking.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\Booking.cs",
+              "RelativeToolTip": "Taxi\\Models\\Booking.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T21:22:58.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Taxi\\Models\\Contact.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\Contact.cs",
+              "RelativeToolTip": "Taxi\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T21:20:53.056Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\appsettings.json",
+              "RelativeDocumentMoniker": "Taxi\\appsettings.json",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\appsettings.json",
+              "RelativeToolTip": "Taxi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T21:12:21.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Taxi\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Projects\\TAXI_Project\\myproject\\Taxi-database\\Taxi\\Taxi\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Taxi\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAAFAAAAAJAAAA",
+              "ViewState": "AgIAADgAAAAAAAAAAAAQwEMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T10:00:34.925Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Model\\Contact.cs",
+              "RelativeDocumentMoniker": "Taxi\\Model\\Contact.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Model\\Contact.cs",
+              "RelativeToolTip": "Taxi\\Model\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T01:27:29.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDetail.cs",
+              "DocumentMoniker": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\UserDetail.cs",
+              "RelativeDocumentMoniker": "Taxi\\Models\\UserDetail.cs",
+              "ToolTip": "D:\\Projects\\TAXI_Project\\OnlineTAXIBooking\\Taxi-database\\Taxi\\Taxi\\Models\\UserDetail.cs",
+              "RelativeToolTip": "Taxi\\Models\\UserDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T01:04:51.907Z"
             }
           ]
         }

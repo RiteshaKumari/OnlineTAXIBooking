@@ -13,7 +13,6 @@ public partial class TaxiDbContext : DbContext
     public TaxiDbContext(DbContextOptions<TaxiDbContext> options)
         : base(options)
     {
-
     }
 
     public virtual DbSet<Booking> Bookings { get; set; }
@@ -27,8 +26,10 @@ public partial class TaxiDbContext : DbContext
     public virtual DbSet<UserDetail> UserDetails { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
 
-        => optionsBuilder.UseMySQL("server=database-2.cjwckqaqoz02.ap-south-1.rds.amazonaws.com;database=Taxi;user=admin;password=#2Ritesha124;TreatTinyAsBoolean=true;");
+    }    
+        //=> optionsBuilder.UseMySQL("server=taxidatabase.cdk2o42a248w.ap-southeast-1.rds.amazonaws.com;database=taxi;user=admin;password=riteshakumari;TreatTinyAsBoolean=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -38,11 +39,13 @@ public partial class TaxiDbContext : DbContext
 
             entity.ToTable("Booking");
 
-            entity.Property(e => e.BookingId).HasColumnName("BookingID");
-            entity.Property(e => e.EndDestination).HasMaxLength(200);
-            entity.Property(e => e.Phone).HasMaxLength(200);
+            entity.Property(e => e.Description).HasColumnType("text");
+            entity.Property(e => e.Email).HasMaxLength(255);
+            entity.Property(e => e.EndDestination).HasMaxLength(255);
+            entity.Property(e => e.Name).HasMaxLength(255);
+            entity.Property(e => e.Phone).HasMaxLength(50);
             entity.Property(e => e.StartingDate).HasColumnType("datetime");
-            entity.Property(e => e.StartingDestination).HasMaxLength(200);
+            entity.Property(e => e.StartingDestination).HasMaxLength(255);
         });
 
         modelBuilder.Entity<Contact>(entity =>
@@ -51,12 +54,10 @@ public partial class TaxiDbContext : DbContext
 
             entity.ToTable("Contact");
 
-            entity.Property(e => e.Id).HasColumnName("ID");
-            entity.Property(e => e.Message).HasMaxLength(200);
-            entity.Property(e => e.Phone)
-                .HasMaxLength(20)
-                .HasColumnName("phone");
-            entity.Property(e => e.Subject).HasMaxLength(200);
+            entity.Property(e => e.Message).HasColumnType("text");
+            entity.Property(e => e.Name).HasMaxLength(255);
+            entity.Property(e => e.Phone).HasMaxLength(50);
+            entity.Property(e => e.Subject).HasMaxLength(255);
         });
 
         modelBuilder.Entity<Role>(entity =>
@@ -65,11 +66,8 @@ public partial class TaxiDbContext : DbContext
 
             entity.ToTable("Role");
 
-            entity.Property(e => e.RoleId).HasColumnName("RoleID");
-            entity.Property(e => e.RoleName).HasMaxLength(200);
-            entity.Property(e => e.Sts)
-                .HasMaxLength(1)
-                .IsFixedLength();
+            entity.Property(e => e.RoleName).HasMaxLength(255);
+            entity.Property(e => e.Sts).HasMaxLength(50);
         });
 
         modelBuilder.Entity<User>(entity =>
@@ -78,21 +76,14 @@ public partial class TaxiDbContext : DbContext
 
             entity.ToTable("User");
 
-            entity.HasIndex(e => e.Email, "Email").IsUnique();
+            entity.HasIndex(e => e.RoleId, "RoleId");
 
-            entity.HasIndex(e => e.Phone, "Phone").IsUnique();
-
-            entity.HasIndex(e => e.RoleId, "RoleID");
-
-            entity.Property(e => e.UserId).HasColumnName("UserID");
-            entity.Property(e => e.Email).HasMaxLength(200);
-            entity.Property(e => e.Password).HasMaxLength(200);
-            entity.Property(e => e.Phone).HasMaxLength(200);
-            entity.Property(e => e.RoleId).HasColumnName("RoleID");
+            entity.Property(e => e.Email).HasMaxLength(255);
+            entity.Property(e => e.Password).HasMaxLength(255);
+            entity.Property(e => e.Phone).HasMaxLength(50);
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("User_ibfk_1");
         });
 
@@ -102,19 +93,14 @@ public partial class TaxiDbContext : DbContext
 
             entity.ToTable("UserDetail");
 
-            entity.HasIndex(e => e.UserId, "UserID");
+            entity.HasIndex(e => e.UserId, "UserId");
 
-            entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-            entity.Property(e => e.Sts)
-                .HasMaxLength(1)
-                .IsFixedLength();
-            entity.Property(e => e.UserId).HasColumnName("UserID");
-            entity.Property(e => e.UserName).HasMaxLength(200);
+            entity.Property(e => e.Sts).HasMaxLength(50);
+            entity.Property(e => e.UserName).HasMaxLength(255);
 
             entity.HasOne(d => d.User).WithMany(p => p.UserDetails)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("UserDetail_ibfk_1");
         });
 

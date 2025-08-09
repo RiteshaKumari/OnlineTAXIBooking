@@ -150,7 +150,7 @@ function Contact() {
                     <div className="text ml-xs--0 mt-xs-10">
                       <h4>Have any question?</h4>
                       <a href="tel:980089850">
-                        <span>Free</span> +92 (020)-9850
+                        <span>Free</span> +91 8475 904950
                       </a>
                     </div>
                   </li>
@@ -161,7 +161,7 @@ function Contact() {
                     <div className="text ml-xs--0 mt-xs-10">
                       <h4>Write email</h4>
                       <a href="mailto:someone@example.com">
-                        someone@example.com
+                      mabhdrakali999@gmail.com
                       </a>
                     </div>
                   </li>
@@ -171,7 +171,8 @@ function Contact() {
                     </div>
                     <div className="text ml-xs--0 mt-xs-10">
                       <h4>Visit anytime</h4>
-                      <span>66 Brooklyn Golden Street, New York</span>
+                      <span>25 Street, 145 Road New
+                      Patna,Bihar - 800024</span>
                     </div>
                   </li>
                 </ul>

@@ -1,0 +1,128 @@
+[
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "Booking",
+    "RelativePath": "api/Home/Booking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Taxi.Model.Booking",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "Contact",
+    "RelativePath": "api/Home/Contact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Taxi.Model.Contact",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "GetBookedData",
+    "RelativePath": "api/Home/GetBookedData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "resetpassword",
+    "RelativePath": "api/Home/resetpassword/{email}/{password}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "Signin",
+    "RelativePath": "api/Home/Signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Taxi.Model.Signin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "Signout",
+    "RelativePath": "api/Home/Signout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/Home/verifyemail/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taxi.Controllers.HomeController",
+    "Method": "VerifyOTP",
+    "RelativePath": "api/Home/VerifyOTP/{otp}/{actualotp}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "otp",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "actualotp",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
